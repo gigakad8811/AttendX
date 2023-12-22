@@ -22,13 +22,13 @@ implemented.
 
 ## Main Tools used
 
-***This Android App “Attend X” presents an android package of real-time 
+This Android App “Attend X” presents an android package of real-time 
 operational database for an educational institution. To develop this 
 project, we have used **ANDROID STUDIO v2020.3.1.** as the main 
 development platform using **XML** as the front end language (markup 
 language) and the **JAVA** as the back end language (programming 
 language). We have also incorporated Google Firebase Services as our 
-database.***
+database.
 
 
 
