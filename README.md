@@ -2,7 +2,7 @@ This Android App (**Attend X**) is a realtime digital attendance management syst
 
 ***It mainly focuses on recording and storing of daily attendance of students and calculating the attendance percentage. In addition to this, it also generates attendance reports and allows students to view their attendance.***
 
-**Objectives of the Project**
+## Objectives of the Project
 
 The objective of this project is to make the attendance 
 recording process faster, reliable and realtime. 
@@ -20,7 +20,7 @@ Altogether this project will be of great help in saving
 time, labour and proper supervision once it is 
 implemented. 
 
-**Main Tools used**
+## Main Tools used
 
 ***This Android App “Attend X” presents an android package of real-time 
 operational database for an educational institution. To develop this 
@@ -32,7 +32,7 @@ database.***
 
 
 
-**Attend X App Logo**
+## Attend X App Logo
 
 
 ![atdx logo resize](https://github.com/gigakad8811/AttendX/assets/120395102/3b179bda-4bc6-486c-961a-c7e0d7d2896a)
@@ -41,7 +41,7 @@ database.***
 
 
 
-**Attend X App User Interface Snapshots**
+## Attend X App User Interface Snapshots
 
 
 ![Screenshot 2023-12-22 173042](https://github.com/gigakad8811/AttendX/assets/120395102/e82a011d-f8b3-478e-9fed-ddb0f82a7295)
