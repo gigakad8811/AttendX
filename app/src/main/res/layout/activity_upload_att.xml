@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload_att"
+    android:background="@drawable/grad30">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Today's Attendance Data"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/total_presant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/heading"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-31dp"
+        android:fontFamily="@font/poppins"
+        android:text="Total Student Present today    :"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/presant_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/total_presant"
+        android:layout_alignBottom="@id/heading"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="-34dp"
+        android:text="10"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/total_absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/heading"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-62dp"
+        android:fontFamily="@font/poppins"
+        android:text="Total Student absent today     : "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/absent_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/total_presant"
+        android:layout_alignBottom="@id/heading"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="-66dp"
+        android:text="10"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/disc"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/absent_val"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-70dp"
+        android:fontFamily="@font/poppins"
+        android:text="\nWe are uploading your attendance data to server. \n please do not close the app or press back button."
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/upl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disc"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="-74dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="\tUploading : "
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/init_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-72dp"
+        android:layout_toRightOf="@+id/upl"
+        android:text="1"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/slash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disc"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="-72dp"
+        android:layout_toRightOf="@id/init_val"
+        android:text="/"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/final_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disc"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="-72dp"
+        android:layout_toRightOf="@id/slash"
+        android:text="100"
+        android:textColor="#72FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/entries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/disc"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="-75dp"
+        android:layout_toRightOf="@id/final_val"
+        android:fontFamily="@font/poppins"
+        android:text=" Entries"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/attendx"/>
+
+
+</RelativeLayout>

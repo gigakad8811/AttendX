@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@drawable/grad">
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Hi, there \nLet's get started... "
+        android:textColor="#E8FFFFFF"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="27sp"
+        android:elevation="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="250dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/help"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="50dp"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:src="@drawable/help2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:contentDescription="@string/todo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/google_signIn"
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="360dp"
+            android:layout_marginBottom="360dp"
+            android:background="@drawable/custom_button"
+            android:drawableStart="@drawable/google"
+            android:ellipsize="middle"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:elevation="80dp"
+            android:shadowDx="-4"
+            android:shadowDy="-4"
+            android:outlineSpotShadowColor="@color/button"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:shadowColor="@color/button"
+            android:text="Connect with google"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#525252"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

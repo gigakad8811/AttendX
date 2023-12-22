@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".frag_join_req">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="9dp"
+        android:padding="8dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/nav_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nav_join"
+        android:layout_toRightOf="@id/back_btn"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/nav_join"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Here you can view the requests sent by the students to join your classroom."
+        android:textColor="#83FFFFFF"
+        android:textSize="9sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/join_req_rv"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="6dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/join_req_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/blue"
+            app:bt_colorInactive="@color/connect"
+            app:bt_icon="@drawable/join_req"
+            app:bt_padding="8dp"
+            app:bt_title="Join Requests" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_view_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#409709"
+            app:bt_colorInactive="@color/connect"
+            app:bt_icon="@drawable/member_list"
+            app:bt_padding="8dp"
+            app:bt_title="Members"
+            app:bt_titlePadding="5dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/take_attendance_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#7446BD"
+            app:bt_colorInactive="@color/connect"
+            app:bt_icon="@drawable/take_attendance"
+            app:bt_padding="8dp"
+            app:bt_title="Take Attendance"
+            app:bt_titlePadding="5dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_view_attadance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="#A83535"
+            app:bt_colorInactive="@color/connect"
+            app:bt_icon="@drawable/view_attendance"
+            app:bt_padding="8dp"
+            app:bt_title="View all Attendance"
+            app:bt_titlePadding="5dp" />
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+</RelativeLayout>

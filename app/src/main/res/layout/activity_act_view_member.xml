@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act_view_member"
+    android:background="@color/dark">
+
+    <ImageView
+        android:id="@+id/home_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/nav_mem" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/nav_view"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Here you can view your classroom's members who have joined your classroom."
+        android:textColor="#83FFFFFF"
+        android:textSize="9sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_mem_RV"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/info" />
+
+</RelativeLayout>

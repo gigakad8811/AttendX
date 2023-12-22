@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="#FFACFE">
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classroom"
+            android:textSize="14sp"
+            android:textColor="@color/dark"
+            android:fontFamily="@font/poppins_semibold"
+            />
+
+
+        <TextView
+            android:id="@+id/sub_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_name"
+            android:fontFamily="@font/poppins"
+            android:text="Physics"
+            android:textColor="@color/dark"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/sub_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sub_name"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="PH 201"
+            android:textColor="@color/dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ins_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub_code"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="GURUCHARAN COLLEGE"
+            android:textColor="@color/dark"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/created_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abhijit Saha"
+            android:layout_below="@+id/ins_name"
+            android:textSize="5sp"
+            android:textColor="@color/dark"
+            android:fontFamily="@font/poppins_semibold"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/card_bg"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/recent1" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

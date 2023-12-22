@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JoinClassroom"
+    android:background="@drawable/grad">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/attendx_txt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="85dp"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Enter the room id..."
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="30sp"
+            android:textColor="#EDFFFFFF"
+            android:elegantTextHeight="true"
+            android:layout_marginTop="400dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/classId"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="enter class code"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/button"
+            android:textColorHint="#8F8F8F"
+            android:maxLength="6"/>
+
+        <Button
+            android:id="@+id/joinBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/joinbtn"
+            android:layout_marginTop="5dp"
+            android:ellipsize="middle"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

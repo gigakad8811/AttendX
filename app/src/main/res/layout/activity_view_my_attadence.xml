@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_my_Attadence"
+    android:background="@drawable/grad">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Attendance Report"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+    <sun.bob.mcalendarview.MCalendarView
+        android:id="@+id/calendar"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="#77FDFCFC"
+        android:padding="20dp"
+        tools:context=".View_my_Attadence" />
+
+    <TextView
+        android:id="@+id/cls_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Progress"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/cls_activity"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="3dp"
+        app:cardElevation="8dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D5000000"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cls_activity"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="0"
+            android:textColor="#D7FFFE"
+            android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="3dp"
+                android:height="45dp"
+                android:elevation="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Overall percentage of you attending the class. "
+                android:textColor="#D7FFFE"
+                android:textSize="9sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attendx_txt"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+
+            <com.timqi.sectorprogressview.ColorfulRingProgressView
+                android:id="@+id/crpv"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/cls_activity"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/percent"
+                app:bgColor="#E3E3E3"
+                app:fgColorEnd="#0066FF"
+                app:fgColorStart="#00FF99"
+                app:startAngle="0"
+                app:strokeWidth="21dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--<androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cls_activity"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardact"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/attendx_txt"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This feature will be provided in the next update."
+                android:textColor="#E2FFFFFF"
+                android:elevation="6dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="15dp"
+                android:padding="15dp"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

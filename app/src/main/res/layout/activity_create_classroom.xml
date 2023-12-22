@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateClassroom"
+    android:background="@drawable/grad">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/attendx_txt" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:height="20sp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Enter your classroom details"
+        android:textColor="#EDFFFFFF"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/classroomName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Classroom Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/button"
+        android:textColorHint="#8F8F8F" />
+
+    <EditText
+        android:id="@+id/subjectName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Subject Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/button"
+        android:textColorHint="#8F8F8F" />
+
+    <EditText
+        android:id="@+id/subjectCode"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Subject Code"
+        android:inputType="textPersonName"
+        android:textColor="@color/button"
+        android:textColorHint="#8F8F8F" />
+
+    <EditText
+        android:id="@+id/instituteName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:inputType="textPersonName"
+        android:textColorHint="#8F8F8F"
+        android:textColor="@color/button"
+        android:hint="Institute Name" />
+
+    <ImageView
+        android:id="@+id/crtclsbtn"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/instituteName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="360dp"
+        android:elevation="20dp"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:outlineSpotShadowColor="@color/blue"
+        android:src="@drawable/crt_class" />
+
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act_take_atten"
+    android:background="@color/dark">
+
+    <ImageView
+        android:id="@+id/home_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:src="@drawable/back" />
+
+
+
+    <ImageView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/nav_take" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_view"
+        android:text="Today's Date : "
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_view"
+        android:layout_toRightOf="@id/date"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="11-09-2021"
+        android:textColor="@color/blue"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/last_cls_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_value"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Last Class Taken : "
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/last_cls_date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_value"
+        android:layout_toRightOf="@id/last_cls_date"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="00-00-0000"
+        android:textColor="@color/blue"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/total_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_cls_date_value"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Total Present : "
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/total_present_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_cls_date_value"
+        android:layout_toRightOf="@id/total_present"
+        android:text="20"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/total_absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_cls_date_value"
+        android:layout_toRightOf="@id/total_present_value"
+        android:fontFamily="@font/poppins"
+        android:text="Total absent : "
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/total_absent_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_cls_date_value"
+        android:layout_toRightOf="@id/total_absent"
+        android:text="20"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/total_stu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_cls_date_value"
+        android:layout_toRightOf="@id/total_absent_value"
+        android:text="Total Students : "
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/total_stu_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_cls_date_value"
+        android:layout_toRightOf="@id/total_stu"
+        android:text="30"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/take_att_RV"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/total_stu_value" />
+
+    <Button
+        android:id="@+id/submit_att_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have come to the end of students list /n submit today's attedance"
+        android:textColor="@color/dark"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

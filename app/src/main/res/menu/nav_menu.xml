@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/join_req_nav"
+        android:title="Join requests"
+        android:icon="@drawable/join_req"
+        />
+    <item
+        android:id="@+id/member_list_nav"
+        android:title="Member List"
+        android:icon="@drawable/member_list"
+        />
+    <item
+        android:id="@+id/take_attendance_nav"
+        android:title="Take Attendance"
+        android:icon="@drawable/take_attendance"
+        />
+    <item
+        android:id="@+id/view_attendance_nav"
+        android:title="View Attendance"
+        android:icon="@drawable/view_attendance"
+        />
+</menu>
